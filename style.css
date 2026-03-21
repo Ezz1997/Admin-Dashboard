@@ -16,17 +16,36 @@ body, html{
 }
 
 nav{
-    background-color:aqua;
+    display: grid;
+    grid-template-rows: 80px 350px 1fr;
+    background-color:#1E293B;
     grid-column: 1;
     grid-row: 1 / span 2;
+    color: whitesmoke;
+    padding: 16px;
+    align-items:start;
 }
 
 header{
-    background-color:blueviolet;
+    background-color:#FFFFFF;
     grid-column: 2;
 }
 
 main{
-    background-color:cadetblue;
+    background-color:#F1F5F9;
     grid-column: 2;
+}
+
+.nav-link{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 36px 1fr;
+    align-items: center;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    font-weight: 1000;
 }
