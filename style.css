@@ -29,6 +29,11 @@ nav{
 header{
     background-color:#FFFFFF;
     grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 3fr 1fr;
+    padding: 32px;
+    gap: 48px;
 }
 
 main{
@@ -48,4 +53,17 @@ main{
 
 .nav-link:hover{
     font-weight: 1000;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    border:3px solid rgb(154, 154, 8);
+    align-items: center;
+}
+
+.search > input{
+    width: 500px;
+    height: 24px;
+    border-radius: 10px;
 }

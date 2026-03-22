@@ -12,7 +12,33 @@
   </head>
   <body>
     <div class="container">
-      <header>Header</header>
+      <header>
+        <div class="search">
+          <span class="material-symbols-outlined"> search </span>
+          <input id="search" name="search" type="text" />
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 32px 100px 100px;
+            justify-content: space-between;
+            border:3px solid aqua;
+          "
+        >
+          <span class="material-symbols-outlined"> notifications_active </span>
+          <p>Profile Pic</p>
+          <p>Ezz Maree</p>
+        </div>
+        <div style="border: 3px solid gray;">
+          <p>Welcome message</p>
+        </div>
+        <div style="border: 3px solid blue;">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </header>
       <nav>
         <div class="nav-link">
           <span class="material-symbols-outlined"> dashboard </span>
