@@ -67,3 +67,27 @@ main{
     height: 24px;
     border-radius: 10px;
 }
+
+button{
+    height: 32px;
+    width: 90px;
+    border-radius: 16px;
+    border: none;
+    background-color: #1E293B;
+    color: white;
+    box-shadow: 0 4px 6px 0 #1e3559;
+}
+
+button:hover{
+    font-weight: bold;
+    background-color: #1e3559;
+    cursor: pointer;
+}
+
+.action-buttons-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid blue;
+    padding: 8px;
+    align-items: center;
+}
