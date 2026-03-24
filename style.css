@@ -58,7 +58,6 @@ main{
 .search{
     display: grid;
     grid-template-columns: 36px 1fr;
-    border:3px solid rgb(154, 154, 8);
     align-items: center;
     padding: 8px;
 }
@@ -104,7 +103,6 @@ button:hover{
     display: grid;
     grid-template-columns: 32px 32px 1fr;
     align-items: center;
-    border: 3px solid aqua;
     padding: 8px;
     gap: 16px;
     justify-self: right;
