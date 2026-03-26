@@ -10,7 +10,7 @@ body, html{
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 300px 1fr;
     background-color:beige;
     height: 100vh;
 }
@@ -33,7 +33,9 @@ header{
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 3fr 1fr;
     padding: 32px;
-    gap: 48px;
+    padding-left: 150px;
+    padding-right: 150px;
+    gap: 24px;
 }
 
 main{
@@ -94,14 +96,17 @@ button:hover{
 .action-buttons-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 3px solid blue;
     padding: 8px;
     align-items: center;
+    justify-self: right;
+    gap: 16px;
+    width: 400px;
+    justify-items: right;
 }
 
 .profile-section{
     display: grid;
-    grid-template-columns: 32px 32px 1fr;
+    grid-template-columns: 32px 40px 1fr;
     align-items: center;
     padding: 8px;
     gap: 16px;
@@ -116,4 +121,11 @@ button:hover{
   font-family: "Story Script", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.greeting-section{
+    display: grid; 
+    grid-template-columns: 100px 300px; 
+    align-items: center;
+    padding: 8px;
 }
