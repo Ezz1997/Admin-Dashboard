@@ -140,6 +140,22 @@ main{
 .cards-section{
     border: 1px solid burlywood;
     grid-row: 1 / span 2;
+    padding: 12px;
+}
+
+.card{
+    height: 180px;
+    width: 300px;
+    border: 1px solid palevioletred;
+    padding: 12px;
+}
+
+.card-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid sienna;
+    width: 150px;
+    justify-self: right;
 }
 
 .announcments-section{
