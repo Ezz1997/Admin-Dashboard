@@ -32,9 +32,7 @@ header{
     display: grid;
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 3fr 1fr;
-    padding: 24px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 24px 40px;
     gap: 12px;
 }
 
@@ -132,21 +130,23 @@ main{
     gap: 16px;
     padding: 16px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .cards-section{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-row: 1 / span 2;
     padding: 8px;
     justify-items: center;
-    gap: 8px;
+    gap: 20px;
     align-content: start;
 }
 
 .cards-container{
     display: grid;
     gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .cards-section-title{
@@ -157,7 +157,8 @@ main{
 
 .card{
     height: 185px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 10px;
     padding: 12px;
     box-shadow: -5px 0 0 0 #1E293B, 2px 2px 12px 0 hsl(0deg 0% 0% / 0.1), 0 0 12px 0 hsl(0deg 0% 0% / 0.1);
