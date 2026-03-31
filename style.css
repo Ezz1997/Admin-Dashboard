@@ -38,11 +38,6 @@ header{
     gap: 12px;
 }
 
-main{
-    background-color:#F1F5F9;
-    grid-column: 2;
-}
-
 .nav-link{
     display: grid;
     grid-auto-flow: column;
@@ -131,10 +126,12 @@ button:hover{
 }
 
 main{
+    background-color:#F1F5F9;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 16px;
     padding: 16px;
+    overflow-y: auto;
 }
 
 .cards-section{
@@ -144,6 +141,7 @@ main{
     padding: 8px;
     justify-items: center;
     gap: 8px;
+    align-content: start;
 }
 
 .cards-container{
@@ -174,19 +172,50 @@ main{
 }
 
 .announcments-section{
-    border: 1px solid grey;
+    padding: 12px;
 }
 
 .trending-section{
-    border: 1px solid salmon;
+    padding: 12px;
 }
-
 
 .playfair-display-custom {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+.main-right{
+    display: grid; 
+    grid-template-rows: max-content max-content; 
+    gap: 12px;
+    overflow-y: auto; 
+    height: 500px;
+}
+
+.announcment-container,
+.trending-container{
+    background-color: white;
+    padding: 12px;
+    box-shadow: -2px 0 12px 0 hsl(0deg 0% 0% / 0.1),
+                2px 2px 12px 0 hsl(0deg 0% 0% / 0.1),
+                0 0 12px 0 hsl(0deg 0% 0% / 0.1);
+    border-radius: 10px;
+}
+
+.trending-row{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30px max-content;
+}
+
+.trending-row-icon{
+    grid-column: 1; 
+    grid-row: 1 / span 2;
+    height: 60px;
+    width: 50px;
+    align-self: center;
 }
 
 
