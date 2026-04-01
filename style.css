@@ -107,8 +107,10 @@ button:hover{
     justify-self: right;
 }
 
-.profile-section > span.material-symbols-outlined{
+.profile-section > span.material-symbols-outlined:hover{
     cursor:pointer;
+    transition: all 0.25s ease;
+    transform: translateY(-4px);
 }
 
 .story-script-regular {
