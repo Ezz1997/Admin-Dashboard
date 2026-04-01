@@ -128,7 +128,7 @@ main{
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 16px;
-    padding: 16px;
+    padding: 12px;
     overflow-y: auto;
     overflow-x: hidden;
 }
