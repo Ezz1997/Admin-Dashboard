@@ -48,6 +48,7 @@ header{
 
 .nav-link:hover{
     font-weight: 700;
+    color:rgb(232, 133, 97);
 }
 
 .search{
