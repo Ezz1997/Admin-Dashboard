@@ -82,7 +82,7 @@ button{
 
 button:hover{
     font-weight: bold;
-    background-color: #1e3559;
+    color: rgb(232, 133, 97);
     cursor: pointer;
 }
 
