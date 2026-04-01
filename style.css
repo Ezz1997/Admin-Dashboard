@@ -149,6 +149,11 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.card-icons > span:hover{
+    color: rgb(232, 133, 97);
+    cursor: pointer;
+}
+
 .cards-section-title{
     grid-column: 1 / span 3;
     justify-self: left;
